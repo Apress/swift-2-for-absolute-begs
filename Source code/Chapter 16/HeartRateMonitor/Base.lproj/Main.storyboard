@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HeartRateMonitor" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Human.png" translatesAutoresizingMaskIntoConstraints="NO" id="MB3-g2-Udh">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BPM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYn-BH-6tZ">
+                                <rect key="frame" x="65" y="10" width="42" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="czj-K1-v8r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C4A-8T-Nuq">
+                                <rect key="frame" x="10" y="10" width="47" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="47" id="0wC-zV-gXc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disconnected" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITm-Zq-HrG">
+                                <rect key="frame" x="457" y="10" width="116" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="116" id="eKU-Y0-bWt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Heart.png" translatesAutoresizingMaskIntoConstraints="NO" id="FLf-Qy-PZc">
+                                <rect key="frame" x="212" y="158" width="191" height="116"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="191" id="dPH-Qs-aKR"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="MB3-g2-Udh" secondAttribute="trailing" id="7PO-OH-S5Q"/>
+                            <constraint firstItem="BYn-BH-6tZ" firstAttribute="leading" secondItem="C4A-8T-Nuq" secondAttribute="trailing" constant="8" id="Iyt-1V-Vu4"/>
+                            <constraint firstItem="BYn-BH-6tZ" firstAttribute="baseline" secondItem="C4A-8T-Nuq" secondAttribute="firstBaseline" id="Ja4-pc-unW"/>
+                            <constraint firstItem="MB3-g2-Udh" firstAttribute="top" secondItem="ITm-Zq-HrG" secondAttribute="bottom" constant="-31" id="MHr-Bu-4He"/>
+                            <constraint firstItem="MB3-g2-Udh" firstAttribute="top" secondItem="FLf-Qy-PZc" secondAttribute="bottom" constant="-274" id="QzZ-IL-uXx"/>
+                            <constraint firstItem="MB3-g2-Udh" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="TDV-AM-NCv"/>
+                            <constraint firstItem="MB3-g2-Udh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Th7-Ov-m7A"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FLf-Qy-PZc" secondAttribute="bottom" constant="326" id="fhT-mb-Wpf"/>
+                            <constraint firstItem="FLf-Qy-PZc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="138" id="kSB-mb-zdf"/>
+                            <constraint firstItem="MB3-g2-Udh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lgT-dz-PLe"/>
+                            <constraint firstItem="BYn-BH-6tZ" firstAttribute="leading" secondItem="C4A-8T-Nuq" secondAttribute="trailing" constant="8" id="lx6-Zf-lWj"/>
+                            <constraint firstItem="ITm-Zq-HrG" firstAttribute="leading" secondItem="MB3-g2-Udh" secondAttribute="trailing" constant="-143" id="mbo-TT-6X7"/>
+                            <constraint firstItem="MB3-g2-Udh" firstAttribute="top" secondItem="C4A-8T-Nuq" secondAttribute="bottom" constant="-31" id="nWJ-1M-YzN"/>
+                            <constraint firstItem="MB3-g2-Udh" firstAttribute="leading" secondItem="C4A-8T-Nuq" secondAttribute="trailing" constant="-57" id="rQk-Jl-EU8"/>
+                            <constraint firstItem="MB3-g2-Udh" firstAttribute="top" secondItem="BYn-BH-6tZ" secondAttribute="bottom" constant="-31" id="tuD-2b-fiN"/>
+                            <constraint firstItem="FLf-Qy-PZc" firstAttribute="centerX" secondItem="MB3-g2-Udh" secondAttribute="centerX" id="vkg-pK-coS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bpmOutlet" destination="C4A-8T-Nuq" id="KW7-Eb-PME"/>
+                        <outlet property="connectedOutlet" destination="ITm-Zq-HrG" id="vAW-Mi-Ney"/>
+                        <outlet property="heartView" destination="FLf-Qy-PZc" id="KO1-aQ-eD7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="351" y="465"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Heart.png" width="340" height="323"/>
+        <image name="Human.png" width="1200" height="1600"/>
+    </resources>
+</document>

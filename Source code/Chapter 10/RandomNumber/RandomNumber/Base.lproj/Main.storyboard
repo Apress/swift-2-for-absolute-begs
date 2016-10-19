@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="RandomNumber" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Mw-XA-ch5"/>
+                        <viewControllerLayoutGuide type="bottom" id="iV9-U8-c7d"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9YY-Ag-NXv">
+                                <rect key="frame" x="55" y="119" width="502" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Seed Random Number Generator">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="seedAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oyu-0F-NlI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EaN-kS-cxx">
+                                <rect key="frame" x="78" y="202" width="457" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Generate Random Number">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="generateAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2nL-bh-YrS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGv-DV-UBs">
+                                <rect key="frame" x="20" y="292" width="555" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="9YY-Ag-NXv" secondAttribute="trailing" constant="23" id="6Lg-vJ-IvK"/>
+                            <constraint firstItem="9YY-Ag-NXv" firstAttribute="centerX" secondItem="EaN-kS-cxx" secondAttribute="centerX" id="FQ0-IX-TZM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KGv-DV-UBs" secondAttribute="trailing" constant="5" id="See-Rw-t0h"/>
+                            <constraint firstItem="9YY-Ag-NXv" firstAttribute="top" secondItem="7Mw-XA-ch5" secondAttribute="bottom" constant="99" id="WYH-AW-tUh"/>
+                            <constraint firstItem="EaN-kS-cxx" firstAttribute="top" secondItem="9YY-Ag-NXv" secondAttribute="bottom" constant="53" id="eQa-jw-wnE"/>
+                            <constraint firstItem="9YY-Ag-NXv" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="35" id="fNA-jd-6ic"/>
+                            <constraint firstItem="EaN-kS-cxx" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="58" id="jmm-db-W1n"/>
+                            <constraint firstItem="KGv-DV-UBs" firstAttribute="top" secondItem="EaN-kS-cxx" secondAttribute="bottom" constant="60" id="nMD-pp-MTr"/>
+                            <constraint firstItem="KGv-DV-UBs" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="rpF-jY-Q9l"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="randomNumberLabel" destination="KGv-DV-UBs" id="O6T-lg-Hja"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-54" y="-402"/>
+        </scene>
+    </scenes>
+</document>
